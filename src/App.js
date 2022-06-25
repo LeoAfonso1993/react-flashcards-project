@@ -10,14 +10,14 @@ import Home from './components/home/Home'
 
 function App() {
   return (
-    <>
+    <div className='body'>
       <FlashNavBar />
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/mycards" element={<CardArea />} />
         <Route path="/newcards" element={<NewCards />} />
       </Routes>
-    </>
+    </div>
   );
 }
 
