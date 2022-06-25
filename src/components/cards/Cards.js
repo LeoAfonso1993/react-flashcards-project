@@ -1,9 +1,13 @@
 import React, { useState } from "react";
-import { Card, Button } from 'react-bootstrap'; 
+import Flag from "../flag/Flag";
+import { Card, Button } from 'react-bootstrap';
+import CardCSS from './Cards.module.css'
+
 
 function Cards({question, answer, id, flashCards, setFlashCards}) {
 
     const [isHidden, setIsHidden] = useState(true)
+    const [flagChange, setFlagChange] = useState(false)
     const newCardList = [...flashCards]
 
     function handleClick() {
@@ -23,12 +27,17 @@ function Cards({question, answer, id, flashCards, setFlashCards}) {
         })
     }
 
+
+    function handleFlagClick() {
+        return setFlagChange(() => !flagChange)
+    }
     
     return (
         <Card key={id} style={{ width: '18rem' }}>
                 <Card.Body>
-                    <Card.Title>
-                        {question}
+                    <Flag handleFlagClick={handleFlagClick} flagChange={flagChange}/>
+                    <Card.Title className={CardCSS.cardTitle}>
+                        {question}        
                     </Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">Click here to see the answer</Card.Subtitle>
                     <Card.Text className={isHidden ? "hideAndShow" : ""}>

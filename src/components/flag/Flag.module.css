@@ -1,0 +1,10 @@
+.flagFill {
+    color: red;
+    text-align: right;
+    display:flexbox;
+}
+
+.flagEmpty {
+    text-align: right;
+    display: flexbox;
+}

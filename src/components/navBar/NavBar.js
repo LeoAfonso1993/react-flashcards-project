@@ -1,15 +1,17 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import navStyle from './NavBar.module.css'
+import { NavBar } from 'react-bootstrap';
 
-function NavBar() {
+function FlashNavBar() {
     return (
-    <div>
+    <nav className="navbar navbar-expand-lg bg-light" >
         <NavLink to="/">Home</NavLink>
         <NavLink to="/mycards">My Cards</NavLink>
         <NavLink to="/newcards">New Cards</NavLink>
-    </div>
+    </nav>
     )
 }
 
-export default NavBar;
+export default FlashNavBar;
 
