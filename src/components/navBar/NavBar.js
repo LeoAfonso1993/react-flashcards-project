@@ -4,6 +4,11 @@ import { Navbar, Container, Nav } from 'react-bootstrap';
 
 
 function FlashNavBar() {
+
+    function handlelink(e) {
+        console.log(e.value)
+    }
+
     return (
         <Navbar bg="dark" expand="lg" variant="dark">
         <Container>
@@ -22,4 +27,3 @@ function FlashNavBar() {
 }
 
 export default FlashNavBar;
-

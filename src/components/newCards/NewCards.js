@@ -3,7 +3,7 @@ import newcCSS from "./NewCards.module.css"
 import { Button } from 'react-bootstrap';
 
 
-function NewCards() {
+function NewCards({titleChange}) {
 
     const [newCardData, setNewCardData] = useState({
         question: "",
@@ -58,24 +58,27 @@ function NewCards() {
     
 
     return (
-        <form className={newcCSS.newCardForm} onSubmit={handleSubmit}>
-        <input
-        className={newcCSS.question} 
-        type="text" 
-        name="question" 
-        placeholder="Question" 
-        onChange={handleChange}
-        value={newCardData.question}></input>
-        <input 
-        className={newcCSS.question}
-        type="text" 
-        name="answer"
-        value={newCardData.answer} 
-        placeholder="Answer"
-        onChange={handleChange}>
-        </input>
-        <Button type="Submit" className={newcCSS.btn} variant="dark">Add New Card</Button>
-        </form>
+        <>
+            {titleChange("TechPrep | New Card")}
+            <form className={newcCSS.newCardForm} onSubmit={handleSubmit}>
+            <input
+            className={newcCSS.question} 
+            type="text" 
+            name="question" 
+            placeholder="Question" 
+            onChange={handleChange}
+            value={newCardData.question}></input>
+            <input 
+            className={newcCSS.question}
+            type="text" 
+            name="answer"
+            value={newCardData.answer} 
+            placeholder="Answer"
+            onChange={handleChange}>
+            </input>
+            <Button type="Submit" className={newcCSS.btn} variant="dark">Add New Card</Button>
+            </form>
+        </>
     )
 }
 
