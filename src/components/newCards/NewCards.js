@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import newcCSS from "./NewCards.module.css"
+import { Button } from 'react-bootstrap';
 
 
 function NewCards() {
@@ -48,6 +50,7 @@ function NewCards() {
                 wrongCounter: 0
             })
         })
+        .then(() => window.alert('Card added successfully!'))
     }
 
 
@@ -55,21 +58,23 @@ function NewCards() {
     
 
     return (
-        <form onSubmit={handleSubmit}>
-        <input 
+        <form className={newcCSS.newCardForm} onSubmit={handleSubmit}>
+        <input
+        className={newcCSS.question} 
         type="text" 
         name="question" 
         placeholder="Question" 
         onChange={handleChange}
         value={newCardData.question}></input>
         <input 
+        className={newcCSS.question}
         type="text" 
         name="answer"
         value={newCardData.answer} 
         placeholder="Answer"
         onChange={handleChange}>
         </input>
-        <button>Add New Card</button>
+        <Button type="Submit" className={newcCSS.btn} variant="dark">Add New Card</Button>
         </form>
     )
 }

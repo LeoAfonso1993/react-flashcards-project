@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Flag from "../flag/Flag";
 import { Card, Button } from 'react-bootstrap';
-import CardCSS from './Cards.module.css'
+import cardCSS from './Cards.module.css'
+
 
 
 function Cards({question, answer, id, flashCards, setFlashCards}) {
@@ -33,18 +34,17 @@ function Cards({question, answer, id, flashCards, setFlashCards}) {
     }
     
     return (
-        <Card key={id} style={{ width: '18rem' }}>
-                <Card.Body>
+        <Card key={id} style={{ maxwidth: '22rem', marginTop: '20px', marginLeft: '20px', marginRight: '20px'}}>
+                <Card.Body className={cardCSS.content}>
                     <Flag handleFlagClick={handleFlagClick} flagChange={flagChange}/>
-                    <Card.Title className={CardCSS.cardTitle}>
+                    <Card.Title>
                         {question}        
                     </Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">Click here to see the answer</Card.Subtitle>
                     <Card.Text className={isHidden ? "hideAndShow" : ""}>
                     {answer}
                     </Card.Text>
-                    <Button onClick={handleClick} variant="dark">{isHidden ? "See the answer" : "Hide"}</Button>
-                    <Button onClick={handleDelete}>Delete</Button>
+                    <Button className={cardCSS.btn} onClick={handleClick} variant="dark">{isHidden ? "Answer" : "Hide"}</Button>
+                    <Button className={cardCSS.btn} onClick={handleDelete}>Delete</Button>
                 </Card.Body>
             </Card>
         )

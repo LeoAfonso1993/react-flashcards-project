@@ -1,28 +1,12 @@
 {
   "myCards": [
     {
-      "id": 2,
-      "question": "What is the virtual DOM?",
-      "answer": "DOM stands for Document Object Model. The DOM represents an HTML document with a logical tree structure. Each branch of the tree ends in a node, and each node contains objects.",
-      "flag": false,
-      "rightCounter": 0,
-      "wrongCounter": 0
-    },
-    {
-      "id": 3,
-      "question": "What is an event in React?",
-      "answer": "An event is an action that a user or system may trigger, such as pressing a key, a mouse click, etc. React events are named using camelCase, rather than lowercase in HTML. With JSX, you pass a function as the event handler, rather than a string in HTML.",
-      "flag": false,
-      "rightCounter": 0,
-      "wrongCounter": 0
-    },
-    {
       "question": "What is JSX?",
       "answer": "Syntax used by react app",
       "flag": false,
       "rightCounter": 0,
       "wrongCounter": 0,
-      "id": 4
+      "id": 1
     },
     {
       "question": "What is a higher-order component in React?",
@@ -30,7 +14,15 @@
       "flag": false,
       "rightCounter": 0,
       "wrongCounter": 0,
-      "id": 5
+      "id": 2
+    },
+    {
+      "question": "What is JSX?",
+      "answer": " higher-order component acts as a container for other components. This helps to keep components simple and enables re-usability. They are generally used when multiple components have to use a common logic. ",
+      "flag": false,
+      "rightCounter": 0,
+      "wrongCounter": 0,
+      "id": 4
     }
   ]
 }

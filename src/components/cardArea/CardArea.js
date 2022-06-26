@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Cards from "../cards/Cards";
 import { Row, Col } from 'react-bootstrap'; 
+import './CardArea.css'
 
 
 function CardArea() {
@@ -14,10 +15,10 @@ function CardArea() {
     },[])
 
 
-
     const allTheCards = flashCards.map((flashcard) => {
 
         return (
+            <Col>
             <Cards
             id={flashcard.id}
             question={flashcard.question}
@@ -25,18 +26,15 @@ function CardArea() {
             flashCards={flashCards}
             setFlashCards={setFlashCards}
             />
+            </Col>
         )
     })
     
     
     return (
         <>
-            <Row xs={1} md={2} className="g-4">
-            {Array.from({ length: 1 }).map((_, idx) => (
-                <Col>
+            <Row xs={1} sm={2} md={3} className="g-4">
                 {allTheCards}
-                </Col>
-            ))}
             </Row>
         </>
     )
