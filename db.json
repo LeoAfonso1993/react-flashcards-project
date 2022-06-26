@@ -1,20 +1,28 @@
 {
-    "myCards": [
-        {
-            "id": 1,
-            "question": "What is JSX?",
-            "answer": "JSX is a syntax extension to JavaScript. It is used with React to describe what the user interface should look like. By using JSX, we can write HTML structures in the same file that contains JavaScript code.",
-            "flag": false,
-            "rightCounter": 0,
-            "wrongCounter": 0
-        },
-        {
-            "id": 2,
-            "question": "What is the virtual DOM?",
-            "answer": "DOM stands for Document Object Model. The DOM represents an HTML document with a logical tree structure. Each branch of the tree ends in a node, and each node contains objects.",
-            "flag": false,
-            "rightCounter": 0,
-            "wrongCounter": 0
-        }
-    ]
+  "myCards": [
+    {
+      "question": "What is JSX?",
+      "answer": "Syntax used by react app",
+      "flag": false,
+      "rightCounter": 0,
+      "wrongCounter": 0,
+      "id": 1
+    },
+    {
+      "question": "What is a higher-order component in React?",
+      "answer": " higher-order component acts as a container for other components. This helps to keep components simple and enables re-usability. They are generally used when multiple components have to use a common logic. ",
+      "flag": false,
+      "rightCounter": 0,
+      "wrongCounter": 0,
+      "id": 2
+    },
+    {
+      "question": "What is JSX?",
+      "answer": " higher-order component acts as a container for other components. This helps to keep components simple and enables re-usability. They are generally used when multiple components have to use a common logic. ",
+      "flag": false,
+      "rightCounter": 0,
+      "wrongCounter": 0,
+      "id": 4
+    }
+  ]
 }
