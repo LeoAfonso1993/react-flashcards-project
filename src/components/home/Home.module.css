@@ -1,4 +1,35 @@
 .txt {
+    color: white;
     text-align: center;
-    padding: 50px;
+    padding: 100px 400px;
+    margin-left: -400px;
 }
+
+
+@media screen and (max-width:1500px) {
+    .txt {
+        padding: 100px 360px;
+        margin-left: -270px;
+    }
+} 
+
+@media screen and (max-width:1200px) {
+    .txt {
+        padding: 100px 330px;
+        margin-left: -300px;
+    }
+} 
+
+@media screen and (max-width:991px) {
+    .txt {
+        padding: 100px 130px;
+        margin-left: 0px;
+    }
+} 
+
+@media screen and (max-width:768px) {
+    .txt {
+        padding: 100px 20px;
+        margin-left: 0px;
+    }
+} 

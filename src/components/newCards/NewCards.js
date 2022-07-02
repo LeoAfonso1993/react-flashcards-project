@@ -76,7 +76,7 @@ function NewCards({titleChange}) {
             placeholder="Answer"
             onChange={handleChange}>
             </input>
-            <Button type="Submit" className={newcCSS.btn} variant="dark">Add New Card</Button>
+            <Button type="Submit" className={newcCSS.btn} >Add New Card</Button>
             </form>
         </>
     )
