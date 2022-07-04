@@ -3,7 +3,12 @@
 }
 
 .body {
-  background-color: rgb(210, 248, 255);
+  backdrop-filter: blur(px);
+  background-image: url(./components/home/pexelspc.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden; 
 
 }
 

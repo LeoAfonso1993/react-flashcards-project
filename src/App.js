@@ -9,13 +9,18 @@ import Home from './components/home/Home'
 
 
 function App() {
+
+  function titleChange(pagetitle) {
+    document.title = pagetitle
+  }
+
   return (
     <div className='body'>
       <FlashNavBar />
       <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/mycards" element={<CardArea />} />
-        <Route path="/newcards" element={<NewCards />} />
+        <Route path="/" element={<Home titleChange={titleChange} />}/>
+        <Route path="/mycards" element={<CardArea titleChange={titleChange} />} />
+        <Route path="/newcards" element={<NewCards titleChange={titleChange} />} />
       </Routes>
     </div>
   );

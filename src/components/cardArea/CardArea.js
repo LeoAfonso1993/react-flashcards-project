@@ -4,7 +4,7 @@ import { Row, Col } from 'react-bootstrap';
 import './CardArea.css'
 
 
-function CardArea() {
+function CardArea({titleChange}) {
 
     const [flashCards, setFlashCards] = useState([])
 
@@ -33,6 +33,7 @@ function CardArea() {
     
     return (
         <>
+            {titleChange("TechPrep | My Cards")}
             <Row xs={1} sm={2} md={3} className="g-4">
                 {allTheCards}
             </Row>
