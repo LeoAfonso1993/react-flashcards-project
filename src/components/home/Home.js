@@ -7,7 +7,6 @@ function Home({titleChange}){
     return ( 
         <Container className="container">
             <Row>
-                
                     <div className={txtCSS.txt}>
                         {titleChange("TechPrep | Home")}
                         <h1>Welcome</h1>

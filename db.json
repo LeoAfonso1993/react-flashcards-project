@@ -1,14 +1,6 @@
 {
   "myCards": [
     {
-      "question": "What is JSX?",
-      "answer": "Syntax used by react app",
-      "flag": false,
-      "rightCounter": 0,
-      "wrongCounter": 0,
-      "id": 1
-    },
-    {
       "question": "What is a higher-order component in React?",
       "answer": " higher-order component acts as a container for other components. This helps to keep components simple and enables re-usability. They are generally used when multiple components have to use a common logic. ",
       "flag": false,
@@ -31,6 +23,14 @@
       "rightCounter": 0,
       "wrongCounter": 0,
       "id": 5
+    },
+    {
+      "question": "What is JSX?",
+      "answer": "Syntax used by react app",
+      "flag": false,
+      "rightCounter": 0,
+      "wrongCounter": 0,
+      "id": 6
     }
   ]
 }
