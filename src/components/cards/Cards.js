@@ -18,7 +18,7 @@ function Cards({question, answer, id, flashCards, setFlashCards}) {
 
     
     function handleDelete() {
-        fetch(`http://localhost:3000/myCards/${id}`, {
+        fetch(`my-json-server.typicode.com/LeoAfonso1993/react-flashcards-project/blob/add-react-app/db.json/${id}`, {
             method: "DELETE",
         })
         .then((response) => response.json())
