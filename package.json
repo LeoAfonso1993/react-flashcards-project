@@ -6,6 +6,7 @@
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
+  "type": "module",
   "dependencies": {
     "abab": "^2.0.6",
     "abbrev": "^1.1.1",
