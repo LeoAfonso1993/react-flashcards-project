@@ -9,7 +9,7 @@ function CardArea({titleChange}) {
     const [flashCards, setFlashCards] = useState([])
 
     useEffect(() => {
-        fetch('my-json-server.typicode.com/LeoAfonso1993/react-flashcards-project/blob/add-react-app/db.json')
+        fetch('http://localhost:3000/myCards')
         .then((response) => response.json())
         .then((item) => setFlashCards(item))
     },[])
