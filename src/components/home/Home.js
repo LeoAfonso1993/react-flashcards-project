@@ -1,7 +1,7 @@
 import React from "react";
 import txtCSS from "./Home.module.css"
-import {Container, Row, Col} from "react-bootstrap"
-import pexelspc from "./pexelspc.jpg"
+import {Container, Row} from "react-bootstrap"
+
 
 function Home({titleChange}){
     return ( 

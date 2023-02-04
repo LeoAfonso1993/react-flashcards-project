@@ -38,7 +38,7 @@ function NewCards({titleChange}) {
             })
         }
 
-        fetch('http://my-json-server.typicode.com/LeoAfonso1993/react-flashcards-project/blob/main/db.json', postNewCard)
+        fetch("http://localhost:3000/myCards", postNewCard)
         .then((response) => response.json())
         .then((item) => console.log(item))
         .then(() => {

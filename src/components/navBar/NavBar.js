@@ -7,9 +7,9 @@ import navStyle from "./NavBar.module.css"
 
 function FlashNavBar() {
 
-    function handlelink(e) {
-        console.log(e.value)
-    }
+    // function handlelink(e) {
+    //     console.log(e.value)
+    // }
 
     return (
         <Navbar bg="dark" expand="lg" variant="dark">
