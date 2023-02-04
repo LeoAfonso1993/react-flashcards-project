@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Cards from "../cards/Cards";
 import { Row, Col } from 'react-bootstrap'; 
-import './CardArea.css'
+
 
 
 function CardArea({titleChange}) {
